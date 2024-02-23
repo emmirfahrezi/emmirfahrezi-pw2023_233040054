@@ -4,38 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>catur</title>
     <style>
-        .box-white {
+        .warna1 {
+            background-color: aliceblue;
             height: 40px;
             width: 40px;
-            background-color: beige;
         }
 
-        .box-black {
+        .warna2 {
+            background-color: black;
             height: 40px;
             width: 40px;
-            background-color: blueviolet;
         }
     </style>
 </head>
 
 <body>
-    <?php
+    <table border="1" cellspacing="0" cellpadding="40">
+        <?php
+        for ($i = 1; $i <= 5; $i++) :
+        ?>
 
-    for ($i = 1; $i <= 25; $i++) {
-        echo "<div class =\"box-wrap\">";
-        if ($i % 2 == 0) {
-            echo "<div class =\"box-white\">$i</div>";
-        } else if ($i % 1 == 0) {
-            echo "<div class =\"box-black\">$i</div>";
-        } else {
-            echo " $i <br>";
-        }
-        echo "</div>";
-    }
+            <tr>
+                <?php for ($j = 1; $j <= 5; $j++) : ?>
+                    <?php $ij = $i + $j; ?>
+                    <?php if ($ij % 2 == 0) : ?>
+                        <td class="warna1"></td>
+                    <?php else : ?>
+                        <td class="warna2"></td>
+                    <?php endif ?>
 
-    ?>
+
+                <?php endfor ?>
+            </tr>
+        <?php endfor ?>
+
+    </table>
 </body>
 
 </html>
