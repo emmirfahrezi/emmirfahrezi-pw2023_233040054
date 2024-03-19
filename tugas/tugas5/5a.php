@@ -97,7 +97,7 @@ $mahasiswaif = [
         img {
 
             width: 100px;
-
+            height: auto;
         }
     </style>
 </head>
@@ -108,7 +108,7 @@ $mahasiswaif = [
     <?php foreach ($mahasiswaif as $if) : ?>
         <ul>
             <li>
-                <img src="gambar/<?= $avt["gambar"]; ?>" alt="">
+                <img src="gambar/<?= $if["gambar"]; ?>" alt="">
             </li>
             <li>Nama : <?= $if["nama"]; ?></li>
             <li>NRP : <?= $if["nrp"]; ?></li>
