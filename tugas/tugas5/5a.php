@@ -1,5 +1,5 @@
 <?php
-$avatar = [
+$mahasiswaif = [
     [
         "nama" => "Emmir Fahrezi",
         "nrp" => "233040054",
@@ -105,15 +105,15 @@ $avatar = [
 <body>
     <h1>Daftar 10 Mahasiswa IF</h1>
 
-    <?php foreach ($avatar as $avt) : ?>
+    <?php foreach ($mahasiswaif as $if) : ?>
         <ul>
             <li>
                 <img src="gambar/<?= $avt["gambar"]; ?>" alt="">
             </li>
-            <li>Nama : <?= $avt["nama"]; ?></li>
-            <li>NRP : <?= $avt["nrp"]; ?></li>
-            <li>Email : <?= $avt["email"]; ?></li>
-            <li>Jurusan : <?= $avt["jurusan"]; ?></li>
+            <li>Nama : <?= $if["nama"]; ?></li>
+            <li>NRP : <?= $if["nrp"]; ?></li>
+            <li>Email : <?= $if["email"]; ?></li>
+            <li>Jurusan : <?= $if["jurusan"]; ?></li>
         </ul>
     <?php endforeach; ?>
 </body>
