@@ -116,6 +116,8 @@ $mahasiswaif = [
             <li>Jurusan : <?= $if["jurusan"]; ?></li>
         </ul>
     <?php endforeach; ?>
+
+    
 </body>
 
 </html>
