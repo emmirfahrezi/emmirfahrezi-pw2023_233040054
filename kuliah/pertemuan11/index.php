@@ -41,7 +41,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                         <td><?= $mhs['jurusan']; ?></td>
                         <td>
                             <a href="#" class="badge text-bg-warning text-decoration-none">ubah</a>
-                            <a href="#" class="badge text-bg-danger text-decoration-none">hapus</a>
+                            <a href="hapus.php?id=<?= $mhs['id'] ?>" name="hapus" class="badge text-bg-danger text-decoration-none">hapus</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
