@@ -40,8 +40,8 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                         <td><?= $mhs['email']; ?></td>
                         <td><?= $mhs['jurusan']; ?></td>
                         <td>
-                            <a href="#" class="badge text-bg-warning text-decoration-none">ubah</a>
-                            <a href="hapus.php?id=<?= $mhs['id'] ?>" name="hapus" class="badge text-bg-danger text-decoration-none">hapus</a>
+                            <a href="ubah.php?id=<?= $mhs['id'] ?>" class="badge text-bg-warning text-decoration-none">ubah</a>
+                            <a href="hapus.php?id=<?= $mhs['id'] ?>" name="hapus" class="badge text-bg-danger text-decoration-none" onclick="return confirm('yakin ingin mengapus data?');">hapus</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
